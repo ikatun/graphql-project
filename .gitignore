@@ -1,0 +1,5 @@
+node_modules
+graphql.graphql
+package-lock.json
+.idea
+graphql.schema.json

@@ -1,4 +1,4 @@
-import { type, query, mutation } from '../graphql/decorators';
+import { type, query, mutation } from 'decorated-graphql';
 
 const allUsers = [{
   id: 1,

@@ -17,10 +17,6 @@
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "glob": "^7.1.2",
-    "graphql": "^0.13.0",
-    "graphql-tools": "^2.20.2",
-    "lodash": "^4.17.5",
-    "merge-graphql-schemas": "^1.4.0",
     "nnode": "0.0.4"
   },
   "devDependencies": {

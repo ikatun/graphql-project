@@ -25,7 +25,8 @@ const allUsers = [{
   firstName: String!
   lastName: String!
   email: String!
-  password: String!`
+  password: String!
+  fullName: String!`
 export class User {
   @query`: [User]!`
   getUsers() {
@@ -33,9 +34,13 @@ export class User {
   }
 
   @mutation`(firstName: String!, lastName: String!, email: String!): User!`
-  createUser(rootResult, { firstName, lastName, email }) {
+  createUser(ignored, { firstName, lastName, email }) {
     const user = { id: allUsers.length + 1, firstName, lastName, email };
     allUsers.push(user);
     return user;
+  }
+
+  fullName(user) {
+    return `${user.firstName} ${user.lastName}`;
   }
 }

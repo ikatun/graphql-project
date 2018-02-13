@@ -29,7 +29,7 @@ const allUsers = [{
   fullName: String!`
 export class User {
   @query`: [User]!`
-  getUsers() {
+  users() {
     return allUsers;
   }
 
